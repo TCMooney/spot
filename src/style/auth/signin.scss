@@ -1,4 +1,15 @@
-.sigin-in {
-    
+.signin {
+    display: grid;
+    grid-template-rows: [logo-s] 1fr [logo-e gap-s] 50px [gap-e form-s] 1fr [form-e];
+    // grid-template-columns: [logo-s] 1fr [logo-e form-s] 1fr [form-e];
+    align-items: center;
+    justify-items: center;
+    &__form {
+        grid-row: form-s/form-e;
+        // grid-column: form-s/form-e;
+    }
+    &__logo {
+        grid-row: logo-s/logo-e;
+        // grid-column: logo-s/logo-e;
+    }
 }
-
