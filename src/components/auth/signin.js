@@ -5,9 +5,9 @@ import AuthHeader from './authHeader';
 class Signin extends Component {
     render(){
         return(
-            <div className="signin">
-                <AuthHeader className='signin__auth-header'/>
-                <SigninForm className='signin__form'/>
+            <div className="sign-in">
+                <AuthHeader className='sign-in__auth-header'/>
+                <SigninForm className='sign-in__form'/>
             </div>
            
         )

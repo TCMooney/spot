@@ -11,20 +11,20 @@ import './style/main.scss';
 
 import history from './history';
 
+import AuthHeader from './components/auth/authHeader';
 import Signin from './components/auth/signin';
-import Layout from './components/layout';
+
+
 
 function main() {
   ReactDOM.render(
     <Provider store={createStoreWithMiddleware(reducers)}>
       <Router history={history}>
-        <Switch>
-          <Route path='/' exact component={Signin}/>
-          <Layout>
-
-          
-          </Layout>
-        </Switch>
+      
+          <Switch>
+            <Route path='/' exact component={Signin}/>
+            
+          </Switch>
       </Router>
     </Provider>
     , document.querySelector('.app-wrapper'));

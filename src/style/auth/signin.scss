@@ -1,15 +1,41 @@
-.signin {
+.sign-in {
     display: grid;
-    grid-template-rows: [logo-s] 1fr [logo-e gap-s] 50px [gap-e form-s] 1fr [form-e];
-    // grid-template-columns: [logo-s] 1fr [logo-e form-s] 1fr [form-e];
-    align-items: center;
-    justify-items: center;
-    &__form {
-        grid-row: form-s/form-e;
-        // grid-column: form-s/form-e;
+    grid-template-rows: [header-s] 100px [header-e gap-s] 75px [gap-e form-s] 400px [form-e];
+    
+    &__auth-header {
+        grid-row: header-s/header-e;
+        
     }
-    &__logo {
-        grid-row: logo-s/logo-e;
-        // grid-column: logo-s/logo-e;
+    &__form {
+        padding-top:40px;
+        grid-row: form-s/form-e;
+        display: grid;
+        grid-template-rows: [email-s] 75px [email-e password-s] 64px [password-e buttons-s] 80px [button-e];
+        grid-template-columns: 40px [form-s] 500px [form-e details-s] 1fr [details-e];
+        width: 700px;
+        grid-row: form-s/form-e;
+        background-color: white;
+        transform: translateX(70px);
+        justify-self: center;
+        transform: translateX(-10px);
+    }
+}
+
+.sign-in-form {
+    & > * {
+        grid-column: form-s/form-e;
+    }
+    &__email {
+        grid-row: email-s/email-e; 
+    }
+    &__password {
+        margin-top: 15px;
+        grid-row: password-s/password-e;
+    }
+    &__login {
+        grid-row: button-s/button-e; 
+    }
+    &__details {
+        grid-column: details-s/details-e
     }
 }

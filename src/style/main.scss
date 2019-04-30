@@ -1,5 +1,6 @@
 html {
     font-size: 62.5%;
+    background-color: black;
 }
 
 *,
@@ -22,6 +23,8 @@ body {
 @import 'search-bar';
 @import 'form-fields';
 @import 'layout';
+@import 'auth/auth-header.scss';
+@import 'details';
 
 //AUTH
 @import 'auth/signin.scss'
