@@ -2,7 +2,7 @@
     display: grid;
     grid-template-rows: [header-s] 100px [header-e gap-s] 75px [gap-e form-s] 400px [form-e];
     
-    &__auth-header {
+    &__header {
         grid-row: header-s/header-e;
         
     }
@@ -11,13 +11,11 @@
         grid-row: form-s/form-e;
         display: grid;
         grid-template-rows: [email-s] 75px [email-e password-s] 64px [password-e buttons-s] 80px [button-e];
-        grid-template-columns: 40px [form-s] 500px [form-e details-s] 1fr [details-e];
-        width: 700px;
+        grid-template-columns: 40px [form-s] 500px [form-e details-s] 1fr [details-e] 55px;
+        width: 800px;
         grid-row: form-s/form-e;
         background-color: white;
-        transform: translateX(70px);
-        justify-self: center;
-        transform: translateX(-10px);
+        transform: translateX(50px);
     }
 }
 

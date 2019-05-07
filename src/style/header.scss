@@ -1,0 +1,19 @@
+.header {
+    text-align: center;
+    grid-row: header-s/header-e;
+    display: grid;
+    grid-template-rows: 15px [logo-s] 100px [logo-e bar-s] 80px [bar-e];
+    &__logo {
+        grid-row: logo-s/logo-e;
+        padding-left: 35px;
+    }
+    &__search {
+        padding-top: 50px;
+    }
+    &__bar {
+        height: 45px;
+        background-color: gray;
+        grid-row: bar-s/bar-e;
+        align-self: center;
+    }
+}

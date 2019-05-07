@@ -1,16 +1,14 @@
 import React, { Component } from 'react';
 
+import SearchBar from './searchBar';
+
 class Header extends Component {
     render() {
-        return (
+        return(
             <div className='header'>
-                <a className='header__logo-link'>
-                    <img className='header__img' src='http://via.placeholder.com/50x50'/>
-                </a>
-                <div className='header__links'>
-                    <a className='header__link'>Login</a>
-                    <a className='header__link'>Settings</a>
-                </div>
+                <img src='http://via.placeholder.com/100x100' className='header__logo'/>
+                <SearchBar className='header__search'/>
+                <div className='header__bar'></div>
             </div>
         )
     }

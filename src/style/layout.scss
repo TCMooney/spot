@@ -1,4 +1,4 @@
 .layout {
     display: grid;
-    grid-template-rows: [header] 
+    grid-template-rows: [header-s] 50px [header-e content-s] 50px [content-e];
 }
