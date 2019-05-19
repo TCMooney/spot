@@ -24,7 +24,7 @@ function main() {
         <Layout>
           <Switch>
             <Route path='/' exact component={Signin}/>
-            
+            <Route path='/signin' exact component={Signin}/>
           </Switch>
         </Layout>
       </Router>

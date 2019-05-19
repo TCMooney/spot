@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import SigninForm from './signinForm';
 
-
 class Signin extends Component {
     render(){
         return(

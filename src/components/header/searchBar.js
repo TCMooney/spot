@@ -13,7 +13,7 @@ class SearchBar extends Component {
     render(){
         const { className } = this.props;
         return (
-            <div className={`{${className} search-bar}`}>
+            <div className={`${className} search-bar`}>
                 <Field className='search-bar__input'
                     name='search'
                     type='search'
